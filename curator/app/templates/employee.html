@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>Каталог обучения</h1><section class="grid">{% for course in courses %}<article><h2>{{ course.title }}</h2><p>{{ course.category }} · {{ course.level }} · {{ course.duration_hours }} ч.</p><p>{{ course.description[:180] }}…</p></article>{% endfor %}</section>{% endblock %}
